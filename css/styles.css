@@ -1,0 +1,545 @@
+@font-face {
+  font-family: 'new_policy2';
+  src:  url(./new_policy2.otf); 
+  font-weight : bold;
+}
+
+@font-face {
+    font-family : 'police_texte';
+    src: url(./police_texte.ttf); 
+}
+
+@font-face {
+    font-family : 'police_titre';
+    src : url(./police_titre.ttf);
+}
+
+h1 { 
+    text-align: center;
+}
+#titre {
+    font-family:  police_titre, arial; 
+    font-size: 400%;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    
+}
+
+h2{
+  background-color:  #80a8f0;
+  font-family: new_policy2, arial;
+  font-size: 200%; 
+  text-align: center; 
+  margin: 2%;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+h3{
+  background-color:  #b8cef6;
+  font-family: new_policy2, arial;
+  text-align: center;
+  font-size: 150%; 
+  text-decoration-line: none;
+  color : white ;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+h4 {
+    font-family: police_texte;
+}
+  
+.menu {
+    display:flex;
+    justify-content:center;
+    }
+
+.bouton1 {
+    background-color:cornflowerblue;
+    padding:20px;
+    margin-left: 20px;
+    border:0px solid white; 
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 40px;
+    text-align: center;
+    text-decoration-line: none;
+    color : white ;
+    font-family:  police_texte, arial;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 34px;
+    font-style:normal;
+    color:white;
+    
+}
+.submenu1 {
+    display:flex;
+    flex-direction:column;
+    border: 2px solid white;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items : stretch;
+    background-image:  url(../images/ressources/photo.jpg);
+    background-size: cover;  
+    
+}
+
+
+div:hover .submenu{
+    display: block;
+    border-width:3px;
+    border-color:black;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.submenu {
+      position : relative;
+      justify-content: center;
+      width:100%;
+      top:50%;
+      left: 0px;
+      display: none;
+}
+.submenu1 {
+    display:flex;
+    flex-direction:column;
+    justify-content :center;
+    align-items:stretch;
+    text-align:center;
+}
+.destination {
+    height:60px;
+    border-width:3px;
+    border-color:white;
+    border-style:solid;
+    padding:20px;
+    text-shadow: black 0.1em 0.1em 0.09em;
+    text-align:center;
+    line-height: 2em;
+    border-bottom: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+#run:hover,#run1:hover {
+    background-image:url(../images/ressources/Ile.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#lao:hover,#lao1:hover  {
+    background-image:url(../images/ressources/Laos.png);
+    background-position: center;
+    background-size: cover;
+
+}
+
+#metier1:hover {
+    background-image:url(../images/ressources/nettoyeur.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#metier2:hover {
+    background-image:url(../images/ressources/Developpeur.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#metier3:hover{
+    background-image:url(../images/ressources/Livreur.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#ber:hover,#ber1:hover  {
+    background-image:url(../images/ressources/Berlin.png);
+    background-position: center;
+    background-size: cover;
+
+}
+#mtp:hover,#mtp1:hover  {
+    background-image:url(../images/ressources/Ville.png);
+    background-position: center;
+    background-size: cover;
+
+}
+#nor:hover,#nor1:hover  {
+    background-image:url(../images/ressources/Rural.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#up {
+    max-width: 75px;
+    position: fixed;
+    bottom: 2%;
+    right : 2%;
+}
+
+a {
+  text-decoration-line: none;
+  color : white ;
+  font-family:  police_texte, arial;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.mini_desti{
+    color:#185a80;
+  
+}
+
+.theme{
+    padding-top: 20px;
+}
+
+.theme>div{
+    display:none;
+    color: black;
+    border:none;
+    font-size: 20px;
+}
+
+.theme:hover div{
+    display:flex;
+    padding: 10px;
+}
+
+article {
+    width: 50%; 
+    font-family:  police_texte, arial;
+    margin-left:  5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+   
+}
+aside { 
+    width: 40%;
+    margin-left: 7%; 
+    margin-right: 5%;
+    margin-top:  2%;
+    margin-bottom: 2%;
+}
+
+.gang {
+   display: flex; 
+   flex-wrap: wrap; 
+}
+
+img {
+    max-width:  350px;
+    display: block; 
+    margin: auto;   
+}
+
+#boite {
+    width: 50%;
+    margin-top : 20%;
+}
+
+
+p {
+    font-family:  police_texte, arial; 
+    text-align: justify;
+}
+#faq>p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+header {
+    height: 100%; 
+    padding: 5%;
+}
+
+body {
+    background-image:  url(../images/ressources/fond.jpg);
+    background-attachment: fixed;
+    background-size:  cover;  
+}
+
+main {
+    display: flex; 
+    background-color: rgba(230, 240, 255, 0.8);
+    margin-bottom: 10%;
+    margin-left: 10.5%;
+    margin-right: 9.5%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+li {
+    text-align: justify;
+    font-family: police_texte;
+}
+
+#go>h3 {
+    height: 5%;
+    line-height: 2em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#go>h3:hover{
+    background-image: url(../images/ressources/fond.jpg);
+}
+
+form {
+    text-decoration-line: none;
+    color : black ;
+    font-family:  police_texte, arial;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align:justify; 
+    display:flex ;
+    flex-direction: column;
+    font-size: 120%;
+    justify-content: center;
+    }
+
+label {
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+#choix {
+    font-size: 100%;
+    border: 0px solid black;
+    padding: 2%
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid grey;
+    background-color: rgba(230, 240, 255, 0);
+    color : black ;
+    font-family:  police_texte, arial;
+    margin-bottom: 20px ;
+}
+input[type=date] {
+    background-color: rgba(230, 240, 255, 0);
+    border: none;
+    color : black ;
+    font-family:  police_texte, arial;
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
+}
+
+
+input[type=submit] {
+    width: 50%;
+    padding: 2%;
+    background-color: rgba(230, 240, 255, 0.6);
+    color :black ;
+    font-family:  police_texte, arial;
+    display : block; 
+    margin: auto; 
+}
+
+.ak-image{
+    margin-top: 40%;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url(../images/ressources/cda.jpg);
+    height: 30%;
+    width: 100%;
+    background-size: 30%;
+    background-position: 80%;
+}
+
+select { 
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom: 1px solid grey;
+    background-color: rgba(230, 240, 255, 0.0);
+    text-decoration-line: none;
+    color : grey;
+    font-family:  police_texte, arial;
+    text-align:justify; 
+    display:flex ;
+    margin-top: 2%;
+    margin-bottom: 20px; 
+    flex-direction: column;
+    font-size: 100%;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    }
+
+.perso {
+    width: 50%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.seul {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 100%;
+}
+
+.seul>h2 {
+    font-size: 150%; 
+
+}
+    
+td {
+    font-family: police_texte, arial;
+    font-size: 90%;
+    text-align: center;
+}
+
+th {
+  background-color: cornflowerblue;
+  font-family: new_policy2, arial;
+  font-size: 150%; 
+  text-align: center; 
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+@media (min-width: 769px) and (max-width: 1380px) {
+    .bouton1{
+        font-size: 135%;
+        height:20px;
+    }
+    .submenu{
+        height:20px;
+    }
+
+    .submenu1{
+        height: auto;
+    }
+
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+
+    th {
+        display: flex; 
+        flex-direction:  column; 
+        margin-top: 2%;      
+    }
+    td {
+        display: flex; 
+        flex-direction:  column; 
+        margin: 5%;
+        font-size: 100%;
+    }
+    
+    #gang1{
+        display:flex;
+        flex-direction: column;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .seul {
+        width: 100%;
+    }
+    .seul>h2 {
+        height:auto;
+        
+    }
+    div.seul {
+        margin:0%;
+    }
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+        display:flex;
+        flex-direction: column;
+    }
+    
+    article {
+        width: auto;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    body {
+        margin: 0%;
+    }
+    
+    aside {
+        width: auto;
+        margin-right: 5%;
+        margin-left: 5%;}
+        body {margin: 0%;
+    }
+    
+    .seul>p {
+        margin-left: 2%;
+        margin-right:2%;
+    }
+    
+    #titre {
+        font-size: 150%;
+    }
+    
+    .bouton1 {
+        font-size: 130%;
+        height: auto;
+        text-align: center;
+        margin-top: 5px;        
+    }
+    .submenu{
+        width: 100%;
+    }
+    .menu{flex-direction: column;
+        height: auto;
+        padding: 2%;
+        
+    }
+    .submenu {
+        position : relative;
+        justify-content: center;
+        width:100%;
+        top:4%;
+        left: 0px;
+        display: none;
+    }
+    #up {
+        max-width: 9%;
+    } 
+    .ak-image {
+        display: none; 
+    }
+
+}

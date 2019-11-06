@@ -2,11 +2,11 @@
 $DS = DIRECTORY_SEPARATOR;
 
 
-require_once (File::build_path(array("controller","ControllerVoiture.php")));
+require_once (File::build_path(array("controller","ControllerCommande.php")));
 
-$tab_actions = get_class_methods('ControllerVoiture');	
-$defautControllerClass = 'ControllerVoiture';
-$defautController = 'voiture';
+$tab_actions = get_class_methods('ControllerCommande');	
+$defautControllerClass = 'ControllerCommande';
+$defautController = 'commande';
 if(isset($_COOKIE['preference'])){
 	$defautControllerClass= 'Controller' . ucfirst($_COOKIE['preference']);
 	$defautController = $_COOKIE['preference'];
@@ -29,42 +29,38 @@ else{
 if(isset($_GET['action'])){
 	$action = $_GET['action'];
 	if($_GET['action'] == 'read'){
-		$immatid = $_GET['immat'];
-		ControllerVoiture::$action($immatid); 
+		$idCommande = $_GET['idCommande'];
+		ControllerCommande::$action($idCommande); 
 	}
 
 
 	elseif($_GET['action'] == 'delete'){
-		$immatid = $_GET['immatriculation'];
-		ControllerVoiture::deleted($immatid);
+		$idCommande = $_GET['idCommande'];
+		ControllerCommande::deleted($idCommande);
 	}
 	elseif($_GET['action'] == 'create'){
-		$immatid = $_GET['immatriculation'];
-		$marque = $_GET['marque'];
-		$couleur = $_GET['couleur'];
-		ControllerVoiture::created($marque,$couleur,$immatid);
+		//A FAIRE
+		ControllerCommande::created(//AFAIRE);
 	}
 	elseif($_GET['action'] == 'update'){
-		$immatid = $_GET['immatriculation'];
-		ControllerVoiture::update($immatid);
+		$idCommande = $_GET['idCommande'];
+		ControllerCommande::update($idCommande);
 	}
 	elseif($_GET['action'] == 'updated'){
-		$immatid = $_GET['immatriculation'];
-		$marque = $_GET['marque'];
-		$couleur = $_GET['couleur'];
-		ControllerVoiture::updated($marque,$couleur,$immatid);
+		//A FAIRE
+		ControllerCommande::updated(//A FAIRE);
 	}
 	elseif (in_array($action, $tab_actions)) {
-		ControllerVoiture::$action(); 
+		ControllerCommande::$action(); 
 	}
 
 	else{
-		ControllerVoiture::error();
+		ControllerCommande::error();
 	}
 
 }
 else{
-	ControllerVoiture::readall();
+	ControllerCommande::readall();
 }
 
 

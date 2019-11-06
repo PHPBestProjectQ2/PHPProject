@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> Mon premier php </title>
+    </head>
+   
+    <body>
+        <?php
+        $voiture1 = array("Toyota", "392763", "Rouge");
+        $voiture2 = array( "Renault", "3178352", "Vert");
+        $voitures = array($voiture1,$voiture2);
+        ?>
+        <h1>Liste des Voitures :</h1>
+        <ul>
+          <li> <?php 
+          echo "Voiture1 {$voitures[0][1]} de marque {$voitures[0][0]} (couleur {$voitures[0][2]})"; ?>          
+          </li>
+          <li> <?php 
+          echo "Voiture2 {$voitures[1][1]} de marque {$voitures[1][0]}(couleur {$voitures[1][2]})"; 
+          ?></li>
+        </ul>
+
+        <form method="post" action="creerVoiture.php">
+  <fieldset>
+    <legend>Mon formulaire :</legend>
+    <p>
+      <label for="immat_id">Immatriculation</label> :
+      <input type="text" placeholder="Ex : 256AB34" name="immatriculation" id="immat_id" required/>
+      <label for="marque_id">Marque</label> :
+      <input type="text" placeholder="Ex : Toyoya" name="marque" id="marque_id" required/>
+      <label for="couleur_id">couleur</label> :
+      <input type="text" placeholder="Ex : Vert" name="couleur" id="couleur_id" required/>
+      
+    </p>
+    <p>
+      <input type="submit" value="Envoyer" />
+    </p>
+  </fieldset> 
+</form>
+
+
+    </body>
+</html> 
